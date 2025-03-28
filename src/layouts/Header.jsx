@@ -1,13 +1,12 @@
 import React, { useState } from 'react'
 import { FaBars } from "react-icons/fa6";
 import { RxCross2 } from "react-icons/rx";
-import { BrowserRouter as Router, Route, Routes, Link, href } from "react-router-dom";
 
 const memuBar = [
   {menu:'Home', href: ""},
-  {menu:'About', href: ""},
+  {menu:'About Us', href: ""},
   {menu:'Doctors', href: ""},
-  {menu:'Home', href: ""},
+  {menu:'News', href: ""},
   {menu:'Contact', href: ""},
 ];
 
@@ -15,7 +14,7 @@ const Header = () => {
   const[openNav, setNave ] = useState(true);
   return (
     <>
-      <header className='container-fluid p-2 shadow'>
+      <header className='container-fluid p-2 shadow fixed top-0 z-10 bg-[white  ]'>
         <div className='container d-flex align-items-center justify-content-between'>
             <section>
                 <h1>Logo</h1>
@@ -29,7 +28,7 @@ const Header = () => {
                 </a>
               ))
             }
-              <a href='' className='text-decoration-none'><li className='p-3 bg-warning rounded text-white fw-bold'>Make an appointment</li></a>
+              <a href='' className='text-decoration-none'><li className='p-3 bg-[#52AFB5] rounded text-white fw-bold'>Make an appointment</li></a>
             </nav>
 
             <section className="hidden max-[991px]:block text-3xl">
@@ -50,12 +49,12 @@ const Header = () => {
           </section> : ' '
         }
       </header>
+
       <a href="">
-        <li className="hidden max-[992px]:block fixed bottom-4 left-1/2 -translate-x-1/2 bg-warning rounded text-white font-bold p-3 w-11/12 text-center shadow-lg">
+        <li className="hidden max-[992px]:block fixed bottom-4 left-1/2 -translate-x-1/2 bg-[#52AFB5] rounded text-white font-bold p-3 w-11/12 text-center shadow-lg">
           Make an appointment
         </li>
       </a>
-
     </>
   )
 }
