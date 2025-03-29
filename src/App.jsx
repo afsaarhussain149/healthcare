@@ -1,3 +1,4 @@
+import Footer from "./layouts/Footer"
 import Header from "./layouts/Header"
 import Home from "./pages/Home"
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <Header />
       <Home />
+      <Footer />
     </>
   )
 }

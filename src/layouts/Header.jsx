@@ -6,7 +6,6 @@ const memuBar = [
   {menu:'Home', href: ""},
   {menu:'About Us', href: ""},
   {menu:'Doctors', href: ""},
-  {menu:'News', href: ""},
   {menu:'Contact', href: ""},
 ];
 
@@ -14,7 +13,7 @@ const Header = () => {
   const[openNav, setNave ] = useState(true);
   return (
     <>
-      <header className='container-fluid p-2 shadow fixed top-0 z-10 bg-[white  ]'>
+      <header className='container-fluid p-2 shadow fixed top-0 z-10 bg-[white] bg-white/30 backdrop-blur-md'>
         <div className='container d-flex align-items-center justify-content-between'>
             <section>
                 <h1>Logo</h1>
